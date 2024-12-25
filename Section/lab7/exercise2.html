@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise2</title>
+    <style>
+      body {
+        margin: 0px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: dodgerblue;
+      }
+      h1 {
+        margin-top: 0px;
+        color: deepskyblue;
+        font-size: 36px;
+      }
+      div {
+        padding: 50px;
+        background-color: white;
+        border-radius: 10px;
+      }
+      label,
+      p {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      input {
+        display: block;
+        width: -webkit-fill-available;
+        padding: 10px;
+        outline: none;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 4px;
+        margin-top: 10px;
+        border: 1px solid deepskyblue;
+      }
+
+      button {
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        padding: 10px;
+        margin-top: 20px;
+        outline: none;
+        font-size: 18px;
+        border-radius: 4px;
+        border: none;
+        color: white;
+        font-weight: 600;
+        background-color: dodgerblue;
+      }
+      button:hover {
+        background-color: deepskyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Temperature converter</h1>
+      <label for="temperatureInput">Enter the temperature:</label>
+      <input placeholder="Enter the temperature degree" />
+      <button id="celsiusToFahrenheitButton">Convert to Fahrenheit</button>
+      <button id="fahrenheitToCelsiusButton">Convert to Celsius</button>
+      <p id="conversionResult"></p>
+    </div>
+
+    <script src="script2.js"></script>
+
+  </body>
+</html>

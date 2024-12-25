@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loops</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        p {
+            color: red;
+        }
+
+        hr {
+            border: 2px solid gold;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Loops</h1>
+    <h3>1.For Loop</h3>
+    <p id="for"></p>
+    <script>
+        let text = "";
+        for (let i = 0; i < 5; i++) {
+            text += "The number is " + i + "<br>";
+        }
+        document.getElementById('for').innerHTML = text;
+    </script>
+    <hr>
+    <h3>2.for in Loop</h3>
+    <p id="forin"></p>
+    <script>
+        const student = { fname: "Seif", lname: "Elfeshawy", age: 21 };
+        let txt = "";
+        for (let x in student) {
+            txt += student[x] + " ";
+        }
+        document.getElementById('forin').innerHTML = txt;
+    </script>
+    <hr>
+    <h3>3.for of Loop</h3>
+    <p id="forof"></p>
+    <script>
+        const students = ["Seif", "Ali", "Amr"];
+        let text2 = "";
+        for (let x of students) {
+            text2 += x + "<br>";
+        }
+        document.getElementById('forof').innerHTML = text2;
+    </script>
+    <hr>
+    <h3>4.While Loop</h3>
+    <p id="while"></p>
+    <script>
+        let text3 = "";
+        let i = 1;
+        while (i <= 10) {
+            text3 += "The number is " + i++ + "<br>";
+        }
+        document.getElementById('while').innerHTML = text3;
+    </script>
+    <hr>
+    <h3>5.Do While Loop</h3>
+    <p id="dowhile"></p>
+    <script>
+        let text4 = "Desending order<br>", n = 10;
+        do {
+            text4 += "The number is " + n-- + "<br>";
+        }
+        while (n >= 1);
+        document.getElementById('dowhile').innerHTML = text4;
+    </script>
+    <hr>
+    <h1>Printing the width and height of screen</h1>
+    <p id="screen"></p>
+    <script>
+        let screen = document.getElementById('screen');
+        let w = window.innerWidth;
+        let h = window.innerHeight;
+        screen.innerHTML = 'width: ' + w + '<br>' + 'height: ' + h;
+    </script>
+
+</body>
+
+</html>

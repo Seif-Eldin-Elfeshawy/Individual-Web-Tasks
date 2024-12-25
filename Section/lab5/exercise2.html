@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise2</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .white{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            color: white;
+            font-size: 30px;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .black{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border-right: 10px solid black;
+            border-top: 10px solid black;
+            border-bottom: 10px solid black;
+            border-left: 10px solid white;
+            position: absolute;
+        }
+
+        .red{
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border-left: 10px solid red;
+            border-top: 10px solid red;
+            border-bottom: 10px solid red;
+            border-right: 10px solid white;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red"></div>
+    <div class="black"></div>
+    <div class="white">Sheet 5</div>
+</body>
+
+</html>

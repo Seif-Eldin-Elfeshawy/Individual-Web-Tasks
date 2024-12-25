@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loader</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+        }
+
+        .loader1 {
+            margin: auto;
+            border: 20px solid;
+            border-top-color: red;
+            border-right-color: blue;
+            border-left-color: green;
+            border-bottom-color: yellow;
+            width: 200px;
+            height: 200px;
+            animation: spinner 4s linear infinite;
+        }
+        
+        .loader2 {
+            margin: auto;
+            border: 10px solid ;
+            border-radius: 50%;
+            border-top-color: #ff5733;
+            border-right-color: #33ff57;
+            border-bottom-color: #3357ff;
+            border-left-color: #ff33a6;
+            width: 200px;
+            height: 200px;
+            animation: spinner 4s linear infinite;
+        }
+        
+        @keyframes spinner {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        hr{
+            border: 5px solid aquamarine;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="loader1"></div>
+    <hr>
+    <div class="loader2"></div>
+</body>
+
+</html>

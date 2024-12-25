@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selecting elements</title>
+    <style>
+        /* 1.selecting element by name */
+        h1{color: red;}
+        /* 2.selecting element by class */
+        .h2{color: blue;}
+        /* 3.selecting element by id */
+        #h3{color: green;}
+        /* 4.selecting all elements by (*) */
+        *{color: violet;}
+        /* 5.selecting element by > */
+        article > span{color: aqua;}
+        /* 6.grouping shared properties */
+        h4,h5{
+            color: brown;
+        }
+        /* 7.selecting the same tag more than once */
+        .gold{
+            color: gold;
+        }
+        .center{
+            text-align: center;
+        }
+        /* 8.conflicting names of properties */
+        .powderblue{
+            color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>1.selecting element by name </h1>
+    <h2 class="h2">2.selecting element by class </h2>
+    <h3 id="h3">3.selecting element by id</h3>
+    <p><b>4.selecting all elements by (*)</b></p>
+    <article> <span>5.selecting element by (>)</span> </article>
+    <h4>6.grouping shared properties</h4>
+    <h6 class="gold center">7.selecting the same tag more than once</h6>
+    <p class="gold powderblue"> 8.conflicting names of properties</p>
+</body>
+</html>

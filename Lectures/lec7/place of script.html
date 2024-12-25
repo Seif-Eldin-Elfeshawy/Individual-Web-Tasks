@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Place of script</title>
+    
+    <style>
+        p{
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        document.getElementById('color').style.color = 'blue';
+    </script>
+</head>
+
+<body style="font-size: 20px;">
+    <script>
+        document.getElementById('color').style.color = 'green';
+    </script>
+    
+    <p id="color">My color is red because the script in the end of the body only be excuted</p>
+    
+    <script>
+        document.getElementById('color').style.color = 'red';
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+    width: 425px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #303131eb;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 5px;
+}
+
+.grid-item {
+    background-color: rgba(116, 113, 113, 0.688);
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    caret-color: transparent;
+    transition: all .1s;
+}
+
+.grid-item:hover {
+    background-color: #434547;
+    cursor: pointer;
+}
+
+.grid-item:active {
+    transform: scale(.8);
+}
+
+.display {
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 5px;
+    text-align: right;
+    caret-color: transparent;
+    grid-column: span 4;
+    background-color: black;
+    color: #9e9d9d;
+}
+
+.operator {
+    background-color: orange;
+}
+
+.operator:hover {
+    background-color: rgb(119, 87, 28);
+}
+
+.equal {
+    background-color: green;
+}
+
+.equal:hover {
+    background-color: rgb(11, 88, 11);
+}
+
+.c {
+    background-color: red;
+    grid-column: span 4;
+}
+
+.c:hover {
+    background-color: rgb(142, 21, 21);
+}

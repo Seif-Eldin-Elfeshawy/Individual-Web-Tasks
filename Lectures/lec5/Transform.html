@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transform</title>
+    <style>
+        div{
+            background-color: red;
+            width: 150px;
+            height:100px;
+        }
+        
+        div#translate{
+            transform: translate(20px,20px);
+        }
+
+        div#rotatex{
+            transform: rotatex(80deg);
+        }
+
+        div#rotatey{
+            transform: rotatey(80deg);
+        }
+
+        div#rotatez{
+            width: 100px;
+            transform: rotatez(80deg);
+        }
+
+        div#skew{
+            transform: skewX(20deg);
+        }
+
+        div#scale{
+            transform: scale(.7);
+        }
+
+    </style>
+</head>
+<body>
+    <div>The Original div</div><hr>
+    <div id="translate">Translated div</div><hr style="transform: translatey(30px);">
+    <div id="rotatex">rotatex</div>rotatex<hr>
+    <div id="rotatey">rotatey</div>rotatey<hr>
+    <div id="rotatez">rotatez</div><hr>
+    <div id="skew">skewx</div><hr>
+    <div id="scale">scale</div>
+</body>
+</html>

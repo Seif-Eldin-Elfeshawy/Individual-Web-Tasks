@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Refrence datatypes</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        p {
+            color: red;
+        }
+
+        hr {
+            border: 2px solid gold;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Refrence Datatypes in JavaScript</h1>
+    <h2>1.Object</h2>
+    <p>This is an example of using an object</p>
+    <script>
+        let student = {
+            firstname: 'Seif',
+            lastname: 'Elfeshawy',
+            id: 30,
+            isAbsent: false
+        };
+
+        document.write('First name = ' + student.firstname + '<br>');
+        document.write('Last name = ' + student.lastname + '<br>');
+        document.write('id = ' + student.id + '<br>');
+        document.write('is Absent = ' + student.isAbsent);
+    </script>
+    <hr>
+    <h2>2.Array</h2>
+    <p>This is an example of using an Array</p>
+    <script>
+        let students = ['Seif', 'Ali', 'Amr'];
+        document.write('students[0] = ' + students[0] + '<br>');
+        document.write('students[1] = ' + students[1] + '<br>');
+        document.write('students[2] = ' + students[2]);
+    </script>
+    <hr>
+    <h2>3.Function</h2>
+    <p>This is an example of using a Function</p>
+    <script>
+        function name() {
+            document.write('Hello <br> My name is Seif Eldin Elsayed Elfeshawy');
+            document.write('<br> This is written by calling a function name().')
+        }
+        name();
+    </script>
+    <hr>
+    <p>This is another example of using a Function</p>
+    <script>
+        function sum(x, y) {
+            return x + y;
+        }
+        let answer = sum(2, 5);
+        document.write('2 + 5 = ' + answer + '<br>');
+        document.write('This is calculated by calling a function sum().');
+    </script>
+</body>
+
+</html>

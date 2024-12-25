@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>if-else switch</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        p {
+            color: red;
+        }
+
+        hr {
+            border: 2px solid gold;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>1.if else</h2>
+    <h3>1.a.Calculate the grade</h3>
+    90 to 100 is A <br>
+    80 to 89 is B <br>
+    70 to 79 is C <br>
+    60 to 69 is D <br>
+    50 to 59 is E <br>
+    Below 50 is F <br>
+    <p id="grade"></p>
+    <script>
+        let score = 95, grade;
+        if (score >= 90 && score <= 100) {
+            grade = 'A';
+        } else if (score >= 80) {
+            grade = 'B';
+        } else if (score >= 70) {
+            grade = 'C';
+        } else if (score >= 60) {
+            grade = 'D';
+        } else if (score >= 50) {
+            grade = 'E';
+        } else {
+            grade = 'F';
+        }
+        document.getElementById('grade').innerHTML="The grade for a score of " + score + " is: " + grade;
+    </script>
+    <hr>
+
+    <h3>1.b.Greeting Message</h3>
+    <p id="greet"></p>
+    <script>
+        const hour = new Date().getHours();
+        let greeting;
+        if (hour < 18) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening";
+        }
+        document.getElementById('greet').innerHTML = greeting;
+    </script>
+    <hr>
+
+    <h2>2.Switch</h2>
+    <h3>2.a.Determine Even or Odd</h3>
+    <p id="result"></p>
+    <script>
+
+        let num = 5, rem = num % 2, result = "";
+        switch (rem) {
+            case 0:
+                result = "Even";
+                break;
+            case 1:
+                result = "Odd";
+                break;
+        }
+        document.getElementById('result').innerHTML = 'The number ' + num + ' is ' + result;
+    </script>
+    <hr>
+    <h3>2.b.Get The Day</h3>
+    <p id="day"></p>
+    <script>
+        let day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+        document.getElementById('day').innerHTML = "Today is " + day;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Border-style</title>
+    <style>
+        p.dotted {
+            border-style: dotted;
+            border-color: blue;
+            border-width: 5px;
+        }
+
+        p.dashed {
+            border-style: dashed;
+            border-color: red;
+            border-width: 6px;
+        }
+
+        p.solid {
+            border-style: solid;
+            border-color: yellow;
+            border-width: 7px;
+        }
+
+        p.double {
+            border-style: double;
+            border-color: green;
+            border-width: 8px;
+        }
+
+        p.hidden {
+            border-style: hidden;
+        }
+
+        p.mix {
+            border-style: solid dotted double;
+            border-color: chocolate;
+            border-width: 5px;
+        }
+
+        #borderimg {
+            border: 20px solid transparent;
+            border-image: url('pictures/border.png') 50 stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="dotted">dotted blue 5px</p>
+    <p class="dashed">dashed red 6px</p>
+    <p class="solid">solid yellow 7px</p>
+    <p class="double">double green 8px</p>
+    <p class="hidden">hidden</p>
+    <p class="mix">mixed chocolate 5px</p>
+    <p id="borderimg">border image with 30 stretch</p>
+    <p>Here is original image</p>
+    <img src="pictures/border.png" alt="border" width="150px" height="100px">
+</body>
+
+</html>

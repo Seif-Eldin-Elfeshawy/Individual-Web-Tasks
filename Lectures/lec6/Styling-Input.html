@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Styling Input</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: #ccc;
+            width: 70%;
+            border: 3px solid blanchedalmond;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            width: 70%;
+            background-color: #f9f9f9;
+            color: #333;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: all .5s linear;
+            resize: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            width: 100%;
+            border-color: #66afe9;
+            outline: none;
+            box-shadow: 10px 10px 10px rgba(102, 175, 233, 0.5);
+            background-color: white;
+        }
+
+        .search {
+            background-image: url('pictures/search.png');
+            background-size: 40px 40px;
+            padding-left: 40px;
+            background-repeat: no-repeat;
+        }
+
+        #styled-select {
+            width: 200px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #styled-select:focus {
+            border-color: #007BFF;
+            box-shadow: 5px 5px 10px rgba(0, 123, 255, 0.5);
+            outline: solid;
+        }
+
+        .styled-button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .styled-button:hover {
+            background-color: #0056b3;
+        }
+
+        .styled-button:active {
+            transform: scale(.5);
+        }
+
+        .styled-button:focus {
+            outline: none;
+            box-shadow: 2px 2px 5px rgba(0, 123, 255, 0.5);
+        }
+
+        h3{
+            color: rgb(136, 101, 101);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Styling Animated Input </h3>
+        Name: <br>
+        <input type="text"><br>
+        Email: <br>
+        <input type="email"> <br>
+        Password: <br>
+        <input type="password"> <br>
+        Search: <br>
+        <input type="text" class="search" placeholder="Search.."> <br>
+        Adress <br>
+        <textarea placeholder="Write Your adress"></textarea> <br>
+        Country <br>
+        <select id="styled-select">
+            <option>Egypt</option>
+            <option>France</option>
+            <option>Argentine</option>
+        </select> <br>
+        <button class="styled-button">
+            Submit
+        </button>
+    </div>
+</body>
+
+</html>
